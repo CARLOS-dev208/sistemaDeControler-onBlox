@@ -1,0 +1,17 @@
+<mat-card class="cardCadstro">
+    <mat-card-title>Novo Vendedor</mat-card-title>
+
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="vendedor.nome" name="nome" />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Código" [(ngModel)]="vendedor.codigo" name="codigo" />
+        </mat-form-field>
+    </form>
+
+    <div style="display: flex; gap: 10px;">
+        <button (click)="create()" mat-raised-button color="primary">Salvar</button>
+        <button routerLink="/vendedores" mat-raised-button>Volta</button>
+    </div>
+</mat-card>

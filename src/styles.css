@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+table {
+    width: 85%;
+    margin-top: 5rem;
+}
+
+thead th {
+    text-align: left;
+    background-color: #ccc;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+tbody td {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+tbody tr {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+tbody tr:nth-child(odd) {
+    background: #eee;
+}
+
+.tabela {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.acoes {
+    display: flex;
+    gap: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ButtonNavigate {
+    width: 92.2%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.cardCadstro {
+    box-sizing: 10px 2px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+}

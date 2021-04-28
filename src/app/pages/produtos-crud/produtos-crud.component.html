@@ -1,0 +1,32 @@
+<div class="tabela">
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th style="width: 60px;">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produto of produtos">
+                <td>{{produto.codigo}}</td>
+                <td>{{produto.nome}}</td>
+
+                <td class="acoes">
+                    <a>
+                        <mat-icon aria-hidden="false">edit</mat-icon>
+                    </a>
+                    <a (click)="deleta(produto)">
+                        <mat-icon aria-hidden="false">delete</mat-icon>
+                    </a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="ButtonNavigate">
+    <button routerLink="/produtos/create" mat-raised-button color="primary">Novo Produto</button>
+
+</div>
